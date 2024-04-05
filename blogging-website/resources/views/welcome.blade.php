@@ -35,7 +35,7 @@
     </div>
     <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="card p-4">
-        <form method="POST" action="{{ route('register') }}">
+        <form method="POST" action="{{ route('register') }} " class="mx-auto">
             @csrf
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
