@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
+    <title>Blogging Website</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <style>
         body {
@@ -29,29 +30,33 @@
     @endif
 
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <form method="POST" action="{{ route('register') }}" class="p-6">
+     
+       <h1> Blogging Website Using Laravel </h1>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4">
+        <form method="POST" action="{{ route('register') }}">
             @csrf
-            <div class="mb-4">
-                <label for="email" class="block">Email</label>
-                <input id="email" type="email" name="email" required>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" type="email" name="email" class="form-control" required>
             </div>
-            <div class="mb-4">
-                <label for="password" class="block">Password</label>
-                <input id="password" type="password" name="password" required>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" type="password" name="password" class="form-control" required>
             </div>
-            <div class="mb-4">
-                <label for="full_name" class="block">Full Name</label>
-                <input id="full_name" type="text" name="full_name" required>
+            <div class="mb-3">
+                <label for="full_name" class="form-label">Full Name</label>
+                <input id="full_name" type="text" name="full_name" class="form-control" required>
             </div>
-            <div class="mb-4">
-                <label for="date_of_birth" class="block">Date of Birth</label>
-                <input id="date_of_birth" type="date" name="date_of_birth" required>
+            <div class="mb-3">
+                <label for="date_of_birth" class="form-label">Date of Birth</label>
+                <input id="date_of_birth" type="date" name="date_of_birth" class="form-control" required>
             </div>
-            <div>
-                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Sign Up</button>
-            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
         </form>
     </div>
+</div>
 </div>
 </body>
 </html>
